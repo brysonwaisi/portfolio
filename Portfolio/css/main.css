@@ -1,0 +1,39 @@
+@import url("/css/styles.css");
+@import url("/css/nav.css");
+@import url("/css/card.css");
+
+/*smartphones*/
+
+@media (min-width: 600px) {
+    .container {
+        grid-template-areas: "main" "ft";
+        color: black;
+        width: 100%;
+    }
+}
+
+
+/*medium screens*/
+
+@media (min-width: 601px) and (max-width: 1200px) {
+    .container {
+        display: grid;
+        grid-template-columns: 300px 300px;
+        grid-template-rows: 200px 400px;
+        grid-template-areas: "main" "main" "main" "ft" "ft" "ft";
+        width: 100%;
+        min-height: 100vh;
+        color: black;
+    }
+}
+
+
+/*large screens*/
+
+@media (min-width: 1201px) {
+    .container {
+        grid-template-areas: "main" "main" "main" "main" "main" "ft" "ft" "ft" "ft";
+        width: 100%;
+        min-height: 100vh;
+    }
+}
